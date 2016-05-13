@@ -87,11 +87,15 @@ sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:george-edison55/cmake-3.x
 sudo apt-get update
 sudo apt-get upgrade    #update if necessary
-sudo apt-get install cmake,build-essential,conky,g++,gfortran,zsh
+sudo apt-get install cmake build-essential conky g+ gfortran zsh
 #Bundle 'Lokaltog/powerline'
+
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 #cp .bashrc ~/.bashrc
 #cp .conkyrc ~/.conkyrc
+
+#git clone https://github.com/powerline/fonts.git
 
 #if cmake 3.x is needed
 #curl -sSL https://cmake.org/files/v3.4/cmake-3.4.0-Linux-x86_64.tar.gz | sudo tar -xzC /opt
