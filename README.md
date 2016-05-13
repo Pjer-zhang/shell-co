@@ -10,3 +10,4 @@ set everything ready when getting a new computer
 check the sources.list if there is ustc.edu 163.com sohu.com if necessary add automatically
 
 ### install necesary software and plug-ins
+eg: zsh vim powerline(passwd needed)

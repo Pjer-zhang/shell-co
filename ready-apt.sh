@@ -87,10 +87,18 @@ sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:george-edison55/cmake-3.x
 sudo apt-get update
 sudo apt-get upgrade    #update if necessary
-sudo apt-get install cmake build-essential conky g+ gfortran zsh
+sudo apt-get install cmake build-essential conky gcc gfortran zsh vim
 #Bundle 'Lokaltog/powerline'
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+wget https://raw.githubusercontent.com/powerline/powerline/develop/font/10-powerline-symbols.conf
+wget https://raw.githubusercontent.com/powerline/powerline/develop/font/PowerlineSymbols.otf
+sudo cp -f 10-powerline-symbols.conf /usr/share/fonts/OTF/
+sudo mv -f 10-powerline-symbols.conf /etc/fonts/conf.d/
+sudo mv -f PowerlineSymbols.otf /usr/share/fonts/OTF/
+
+
 
 #cp .bashrc ~/.bashrc
 #cp .conkyrc ~/.conkyrc
