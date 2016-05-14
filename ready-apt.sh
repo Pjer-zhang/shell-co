@@ -98,7 +98,11 @@ sudo cp -f 10-powerline-symbols.conf /usr/share/fonts/OTF/
 sudo mv -f 10-powerline-symbols.conf /etc/fonts/conf.d/
 sudo mv -f PowerlineSymbols.otf /usr/share/fonts/OTF/
 
-
+tmpstr=`ls ~/.conkyrc`
+if [ ${#tmpstr} -gt 3 ]
+then 
+	cp .conkyrc ~/.conkyrc
+fi
 
 #cp .bashrc ~/.bashrc
 #cp .conkyrc ~/.conkyrc
