@@ -94,6 +94,21 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 wget https://raw.githubusercontent.com/powerline/powerline/develop/font/10-powerline-symbols.conf
 wget https://raw.githubusercontent.com/powerline/powerline/develop/font/PowerlineSymbols.otf
+
+#if there if no this dir make it
+
+if [-d /usr/share/fonts]
+	echo "cd dir:/usr/share/fonts/OTF/"
+		else
+		mkdir -p /usr/share/fonts/OTF/
+fi
+
+if [-d /usr/share/fonts]
+	echo "cd dir:/etc/fonts/conf.d/"
+		else
+		mkdir -p /etc/fonts/conf.d/
+fi
+
 sudo cp -f 10-powerline-symbols.conf /usr/share/fonts/OTF/
 sudo mv -f 10-powerline-symbols.conf /etc/fonts/conf.d/
 sudo mv -f PowerlineSymbols.otf /usr/share/fonts/OTF/
